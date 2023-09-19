@@ -16,8 +16,8 @@ def open_browser():
     pass
 
 
-@pytest.fixture(scope="module")
+@pytest.fixture(scope="function")
 def browser_size():
-    Config.window_width = 1920
-    Config.window_height = 1080
+    Config.window_width = 1280
+    Config.window_height = 720
 

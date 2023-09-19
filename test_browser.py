@@ -2,7 +2,7 @@ from selene.support.shared import browser
 from selene import be, have
 
 
-def test_check_text_insearch_browser(open_browser):
+def test_check_text_insearch_browser(open_browser, browser_size):
     browser.element('[name="q"]').should(be.blank).type('yashaka/selene').press_enter()
     browser.element(".LC20lb.MBeuO.DKV0Md").should(have.text('User-oriented Web UI browser tests'))
 
